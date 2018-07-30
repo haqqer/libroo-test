@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>My Travel Agency</title>
+    </head>
+
+    <body>
+      <div class="navbar-fixed">
+        <nav class="yellow">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo black-text"><i class="large material-icons black-text">book</i> Libroo</a>
+              <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#home" class="black-text">Home</a></li>
+                <li><a href="#paket" class="black-text">Books</a></li>
+                <li><a href="#about" class="black-text">About</a></li>
+                <li><a href="#about" class="btn waves-effect waves-light red lighten-1">Sign In</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+       
+      </div>
+      <ul class="sidenav" id="nav-mobile">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#paket">Paket</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+      </ul>
+      
+      <!-- Section: Slider -->
+      <section class="slider">
+          <ul class="slides">
+              <li>
+                <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?cs=srgb&dl=bookcase-books-bookshelves-159711.jpg&fm=jpg"> <!-- random image -->
+                <div class="caption center-align">
+                  <h3>Search</h3>
+                  <h5 class="light grey-text text-lighten-3">We have many collection book for you!</h5>
+                </div>
+              </li>
+              <li>
+                <img src="https://images.pexels.com/photos/247899/pexels-photo-247899.jpeg?cs=srgb&dl=adult-architecture-black-and-white-247899.jpg&fm=jpg"> <!-- random image -->
+                <div class="caption left-align">
+                  <h3>Read</h3>
+                  <h5 class="light grey-text text-lighten-3">Explore the world by reading.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="https://images.pexels.com/photos/12064/pexels-photo-12064.jpeg?cs=srgb&dl=books-library-students-12064.jpg&fm=jpg"> <!-- random image -->
+                <div class="caption right-align">
+                  <h3>Enjoy</h3>
+                  <h5 class="light grey-text text-lighten-3">Enjoy and share your experience.</h5>
+                </div>
+              </li>
+            </ul>
+      </section>
+      <div class="container">
+        <section>
+          <div class="center-align">
+            <!-- <p style="font-size: 90px">Welcome To Libroo</p> -->
+            <h1>Welcome to Libroo!</h1>
+          </div>
+        </section>
+      </div>
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+        });
+        $(document).ready(function(){
+          $('.slider').slider({
+            indicators:false,
+            duration:1000,
+            interval:5000,
+          });
+        });
+        
+      </script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    </body>
+  </html>
