@@ -62,7 +62,7 @@
               <img src="http://lorempixel.com/g/400/200" alt="">
             </div>
             <a href="#user"><img class="circle" src="https://api.adorable.io/avatars/100/abott@adorable.png"></a>
-            <a href="#name"><span class="white-text name">John Doe</span></a>
+            <a href="#name"><span class="white-text name">Ilham haqqi</span></a>
           </div></li>
           <li><a href="#chart" class="black-text nav-icon">Rekomendasi</a></li>
           <li><a href="#chart" class="black-text nav-icon">Populer</a></li>
@@ -72,6 +72,32 @@
           <li class="divider"></li>
         </ul>
         <!-- End: Mobile Menus-->
+
+        <section class="slider">
+            <ul class="slides">
+                <li>
+                  <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?cs=srgb&dl=bookcase-books-bookshelves-159711.jpg&fm=jpg" class="responsive-img"> <!-- random image -->
+                  <div class="caption center-align">
+                    <h3>Search</h3>
+                    <h5 class="light grey-text text-lighten-3">We have many collection book for you!</h5>
+                  </div>
+                </li>
+                <li>
+                  <img src="https://images.pexels.com/photos/247899/pexels-photo-247899.jpeg?cs=srgb&dl=adult-architecture-black-and-white-247899.jpg&fm=jpg" class="responsive-img"> <!-- random image -->
+                  <div class="caption left-align">
+                    <h3>Read</h3>
+                    <h5 class="light grey-text text-lighten-3">Explore the world by reading.</h5>
+                  </div>
+                </li>
+                <li>
+                  <img src="https://images.pexels.com/photos/12064/pexels-photo-12064.jpeg?cs=srgb&dl=books-library-students-12064.jpg&fm=jpg" class="responsive-img"> <!-- random image -->
+                  <div class="caption right-align">
+                    <h3>Enjoy</h3>
+                    <h5 class="light grey-text text-lighten-3">Enjoy and share your experience.</h5>
+                  </div>
+                </li>
+              </ul>
+        </section>
       <!--JavaScript at end of body for optimized loading-->
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
       <script>
@@ -81,11 +107,16 @@
             constrainWidth: false,
           });
 
-           $('.sidenav').sidenav();
-           $('#search-bar').hide(); 
-           $('#search-btn').click(function(){
-             $('#search-bar').toggle();
-           })
+          $('.sidenav').sidenav();
+          $('#search-bar').hide(); 
+          $('#search-btn').click(function(){
+            $('#search-bar').toggle();
+          });
+          $('.slider').slider({
+            indicators: false,
+            interval: 5000,
+            duration: 1500,
+          })
         });
       </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
