@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <div class="navbar-fixed">
+            <nav class="yellow">
+              <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo black-text"><i class="material-icons">dashboard</i>Dashboard</a>
+                    <ul class="right hide-on-med-and-down">
+                      <li><a href="#home" class="black-text"><i class="left material-icons ">home</i>Home</a></li>
+                      <li><a href="#home" class="dropdown-trigger black-text" data-target="dropdown_menu">Account<i class="right material-icons">arrow_drop_down</i></a></li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+        </div>
+        <!-- DropDown Structure -->
+        <ul id="dropdown_menu" class="dropdown-content">
+          <li><a href="#" class="black-text"><i class="material-icons">account_circle</i>Profil</a></li>
+          <li class="divider"></li>
+          <li><a href="#" class="black-text"><i class="material-icons">settings</i>Pengaturan</a></li>
+          <li><a href="#" class="black-text"><i class="material-icons">power_settings_new</i>Keluar</a></li>
+        </ul>
+        <!-- End: Dropdown Structure -->
+        
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $(".dropdown-trigger").dropdown({
+            hover: true,
+            constrainWidth: false,
+          });
+        })
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    </body>
+  </html>
