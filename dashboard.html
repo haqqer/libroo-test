@@ -44,20 +44,27 @@
         <!-- End: Dropdown Structure -->
 
         <!-- Search bar -->
-        <section 
-          id="search-bar">
+        <section id="search-bar">
           <div class="container">
-            <div class="nav-wrapper">
-              <form>
-                <div class="input-field white">
-                  <input id="search" type="search" placeholder="Cari buku disini ....">
-                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                  <i class="material-icons">close</i>
+            <div class="row">
+              <div class="col s2">
+                <h5 class="right"><i>Cari Buku </i></h5>
+              </div>
+              <div class="col s10">
+                <div class="nav-wrapper">
+                  <form>
+                    <div class="input-field white">
+                      <input id="search-autocomplete" class="autocomplete" type="search" placeholder="Cari buku disini ....">
+                      <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                      <i class="material-icons">close</i>
+                    </div>
+                  </form>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </section>
+        <!-- End: Search Bar -->
         
         <!-- Mobile Menus -->
         <ul id="nav-mobile" class="sidenav">
@@ -116,7 +123,13 @@
             indicators: false,
             interval: 5000,
             duration: 1500,
-          })
+          });
+          // $('#search-autocomplete').autocomplete({
+          //   data : {
+          //     "Novel" : null,
+          //     "Fiksi" : null,
+          //   }
+          // });
         });
       </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
