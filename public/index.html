@@ -6,7 +6,7 @@
       <!--Import materialize.css-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="../css/main.css">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -21,8 +21,8 @@
                     <a href="#" class="sidenav-trigger nav-icon black-text" data-target="nav-mobile"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                       <li><a href="#home" class="black-text nav-icon"><i class="left material-icons">home</i>Home</a></li>
-                      <li><a href="#chart" class="black-text nav-icon">Rekomendasi</a></li>
-                      <li><a href="#chart" class="black-text nav-icon">Populer</a></li>
+                      <li><a href="#rekomendasi" class="black-text nav-icon">Rekomendasi</a></li>
+                      <li><a href="#populer" class="black-text nav-icon">Populer</a></li>
                       <li><a href="#chart" class="black-text nav-icon">Buku Baru</a></li>
                       <li><a href="#chart" class="black-text nav-icon" data-target="search-bar" title="Cari" id="search-btn"><i class="material-icons">search</i></a></li>                      
                       <li><a href="#chart" class="black-text nav-icon" title="Koleksi buku"><i class="material-icons">library_books</i></a></li>
@@ -48,7 +48,7 @@
           <div class="container">
             <div class="row">
               <div class="col s2">
-                <h5 class="right"><i>Cari Buku </i></h5>
+                <h5 class="flow-text">Cari Buku</h5>
               </div>
               <div class="col s10">
                 <div class="nav-wrapper">
@@ -75,8 +75,8 @@
             <a href="#user"><img class="circle" src="https://api.adorable.io/avatars/100/abott@adorable.png"></a>
             <a href="#name"><span class="white-text name">Ilham haqqi</span></a>
           </div></li>
-          <li><a href="#chart" class="black-text nav-icon">Rekomendasi</a></li>
-          <li><a href="#chart" class="black-text nav-icon">Populer</a></li>
+          <li><a href="#rekomendasi" class="black-text nav-icon">Rekomendasi</a></li>
+          <li><a href="#populer" class="black-text nav-icon">Populer</a></li>
           <li><a href="#chart" class="black-text nav-icon">Buku Baru</a></li>
           <li><a href="#chart" class="black-text nav-icon" title="Koleksi buku"><i class="left material-icons">library_books</i>Koleksi Buku</a></li>
           <li><a href="#chart" class="black-text nav-icon" title="Pinjam buku"><i class="left material-icons">shopping_cart</i>Pinjam Buku</a></li>
@@ -109,6 +109,129 @@
                 </li>
               </ul>
         </section>
+        <!-- Section: rekomendasi -->
+        <div class="mt100"></div>
+        <section id="rekomendasi" class="section-rekomendasi black-text center scrollspy">
+          <h3><span class="yellow-text">Buku </span>| Hari ini</h3>
+          <div class="row">
+            <div class="col s12 m6">
+              <img class="responsive-img" src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/dotd_main_image/B10008.png">
+            </div>
+            <div class="col s12 m6 left-align">
+              <h4>The Modern C++ Challenge</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod libero ea corporis.</p>
+              <a href="#" class="waves-effect waves-light red btn"><i class="left material-icons">shopping_cart</i>Pinjam Sekarang</a>
+            </div>
+          </div>
+        </section>
+        <!-- End: rekomendasi -->
+        <!-- Section: Populer -->
+        <div class="mt100"></div>
+        <section id="populer" class="section section-populer black-text center scrollspy">
+          <div class="container">
+            <div class="center-align">
+              <h4>Buku Populer</h4>
+            </div>
+            <div class="row">
+              <div class="col s6 m3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/featured_book_block/B11403.png">
+                    <span class="card-title">Swift</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">shopping_cart</i></a>
+                  </div>
+                  <div class="card-content">
+                    <p>Buku belajar tentang swift</p>
+                  </div>
+                  <div class="card-action">
+                      <a href="#">Detail...</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s6 m3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/featured_book_block/B11403.png">
+                    <span class="card-title">Swift</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">shopping_cart</i></a>
+                  </div>
+                  <div class="card-content">
+                    <p>Buku belajar tentang swift</p>
+                  </div>
+                  <div class="card-action">
+                      <a href="#">Detail...</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s6 m3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/featured_book_block/B11403.png">
+                    <span class="card-title">Swift</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">shopping_cart</i></a>
+                  </div>
+                  <div class="card-content">
+                    <p>Buku belajar tentang swift</p>
+                  </div>
+                  <div class="card-action">
+                      <a href="#">Detail...</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s6 m3">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/featured_book_block/B11403.png">
+                      <span class="card-title">Swift</span>
+                      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">shopping_cart</i></a>
+                    </div>
+                    <div class="card-content">
+                      <p>Buku belajar tentang swift</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Detail...</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+           </div>
+        </section>
+        <!-- End: Populer -->
+
+        <!-- Section: footer -->
+        <section class="section section-footer yellow black-text center">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m6">
+                <h5>About Us</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              </div>
+              <div class="col s12 m6">
+                <h5>Help & Support</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="mt50"></div>
+            <div class="row">
+              <div class="col s12">
+                <p>Follow Us</p>
+                <a href="#" class="black-text">
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="#" class="black-text">
+                  <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="#" class="black-text">
+                  <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="#" class="black-text">
+                  <i class="fab fa-pinterest fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
       <!--JavaScript at end of body for optimized loading-->
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
       <script>
@@ -130,6 +253,9 @@
           //     "Fiksi" : null,
           //   }
           // });
+          $(document).ready(function(){
+            $('.scrollspy').scrollSpy();
+          });
         });
       </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>

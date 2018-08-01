@@ -12,3 +12,15 @@
 .section-populer {
     background: #f0f4f7;
 }
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.mt100 {
+    margin-top: 100px;
+}
+
+.section-footer .fab {
+    margin: 5px 10px;
+}
